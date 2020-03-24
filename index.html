@@ -1,0 +1,70 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+	<title>New Page</title>
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/fav-icon.png"/>
+</head>
+
+<div class="everything">
+	<div class="container">
+
+	<!-- Search bar, redirects to google -->
+		<div id="window">
+			<p id ="time">welcome</p> <p id ="date">welscossse</p>
+			<div class="left-side">
+				<form action="https://google.com/search?" id="form" method="get">
+					<div class="form-group" >
+					  	<input style="width:613px; height:25px;" type="text" name="q" class="form-control" required placeholder="Search" required>
+					</div>
+
+
+					<img style="width: 250px; float: center; right: 32%;  top:-30px; position: absolute;" src="img/top.png">
+
+					<div id="links">
+						<ul>
+							<li><a href="https://www.reddit.com">reddit</a></li>
+							<li><a href="https://www.twitter.com">twitter</a></li>
+							<li><a href="https://www.youtube.com">youtube</a></li>
+							</ul><ul>
+							<li><a href="https://www.twitch.tv">twitch</a></li>
+							<li><a href="https://www.open.spotify.com">spotify</a></li>
+							<li><a href="https://www.mail.google.com/mail/u/2/#inbox.com">gmail</a></li>
+							</ul><ul>
+							<li><a href="https://www.steam.com">steam</a></li>
+							<li><a href="https://www.github.com/DiceRandom">github</a></li>
+							<li><a href="https://www.amazon.com">amazon</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<div id="imagePane">
+				<img src="img/img.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var time,today,date,currentHour,timeElement,dataElement;
+		 var mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+
+		today = new Date();
+		date = mS[today.getMonth()]+'.'+today.getDate() +'.'+ today.getFullYear();
+		currentHour = today.getHours();
+
+		if(currentHour > 12){
+			currentHour -= 12;
+			time = currentHour + ":" + (today.getMinutes()<10?'0':'') + today.getMinutes() + " PM";
+		}else{
+			time = today.getHours() + ":" + today.getMinutes() + " AM";
+		}
+
+		dataElement = document.getElementById("date");
+		dataElement.innerHTML = date;
+
+		timeElement = document.getElementById("time");
+		timeElement.innerHTML = time;
+	</script>

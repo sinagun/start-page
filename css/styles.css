@@ -1,0 +1,99 @@
+	 @font-face { font-family: rainyhearts; src: url('fonts/rainyhearts.ttf'); } 
+
+	html{
+		background-color: black;
+		color: white;
+		font-family: rainyhearts;
+		font-size: 18px;
+	}
+
+	button{
+		background-color: none;
+		color: none;
+	}
+
+	input{
+		font-family: rainyhearts;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	#time{
+		transform: translateY(-150%); 
+		color: white; 
+		position: absolute; 
+		height:25px;
+	}
+
+	#date{
+		left:613px;
+		transform: translateY(-150%); 
+		color: white; 
+		position: absolute; 
+		height:25px;
+		left: 87.5%;
+	}
+
+	
+
+	#links{
+		position: relative;
+  		top:195px;
+  		left:45%;
+	}
+
+	ul{
+		width: 75px;
+	    list-style-type: none;
+	    float: left;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    margin-left: 18px;
+	    margin-right: 18px;
+	    display: block;
+	}
+
+	.form-group{
+		position: relative;
+  		top: 385px;
+
+	}
+
+	.left-side{
+		width: 335px;
+		height: 100%;
+	}
+
+	#window{
+		position: absolute;
+		background-color: #fcfcfc;
+		color: black;
+		width: 613px;
+		height: 378px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	#imagePane{
+		position: relative;
+		top: -378px;
+	    width:  178px;
+		height: 409px;
+	    left: 635px;
+		background-color:#FFFFFF;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.everything{
+		margin: auto;
+		width: 815px;
+		padding: 10px;
+		align-items: center;
+		position: relative;
+		height: 100%;
+	}
