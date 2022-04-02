@@ -1,9 +1,10 @@
-	 @font-face { font-family: rainyhearts; src: url('fonts/rainyhearts.ttf'); } 
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+	  
 
 	html{
-		background-color: black;
+		background-color: #6E6E6E;
 		color: white;
-		font-family: rainyhearts;
+		font-family: 'Bebas Neue', cursive;
 		font-size: 18px;
 	}
 
@@ -23,7 +24,7 @@
 
 	#time{
 		transform: translateY(-150%); 
-		color: white; 
+		color: rgb(0, 0, 0); 
 		position: absolute; 
 		height:25px;
 	}
@@ -31,7 +32,7 @@
 	#date{
 		left:613px;
 		transform: translateY(-150%); 
-		color: white; 
+		color: rgb(0, 0, 0); 
 		position: absolute; 
 		height:25px;
 		left: 87.5%;
